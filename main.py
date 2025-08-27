@@ -1,7 +1,7 @@
 import typer
 
 
-def karatsuba(n1: int, n2: int) -> int:
+def karatsuba(a: int, b: int) -> int:
   raise NotImplementedError("Implementar o algoritmo de Karatsuba")
 
 
