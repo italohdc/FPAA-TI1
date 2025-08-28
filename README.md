@@ -27,8 +27,6 @@ Quando falamos de números grandes, o algoritmo pode reduzir o tempo
 de execução em comparação com o método tradicional. Para números
 pequenos, a diferença de desempenho pode não ser tão significativa.
 
-[TODO: INSERIR DIAGRAMA DRAW.IO]
-
 ### Explicação do código
 
 No código, o algoritmo está implementado na função `def karatsuba(num1: int, num2: int)`,
@@ -132,3 +130,8 @@ python main.py <NÚMERO_1> <NÚMERO_2>
 
 
 ## Relatório Técnico
+
+Abaixo, segue o diagrama do grafo de fluxo do algoritmo
+implementado:
+
+![Grafo de Fluxo](/assets/grafo_fluxo.png)
