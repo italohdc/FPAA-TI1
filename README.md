@@ -167,3 +167,14 @@ M = 1
 
 ### Análise de Complexidade Assintótica
 
+Sobre os casos principais, podemos identificar:
+
+- **Melhor caso:**  
+  - Quando um dos números tem apenas 1 dígito
+  - Complexidade O(1).  
+
+- **Caso médio:**  
+  - A recursão ocorre até os números serem reduzidos a 1 dígito → O(n^1.585).  
+
+- **Pior caso:**  
+  Igual ao caso médio, pois a recursão sempre se aplica para números com mais de 1 dígito → O(n^1.585).  
