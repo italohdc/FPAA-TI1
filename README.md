@@ -131,7 +131,39 @@ python main.py <NÚMERO_1> <NÚMERO_2>
 
 ## Relatório Técnico
 
+### Análise de Complexidade Ciclomática
+
+#### Fluxo de Controle da Função
+
+O fluxo da função pode ser descrito da seguinte forma:
+
+1. Conversão dos números em strings.
+2. Verificação do **caso base** (`if len(x) == 1 or len(y) == 1`).  
+   - Se verdadeiro → retorna a multiplicação direta.  
+      - 2.1. Multiplicação direta (`return int(x) * int(y)`).
+   - Se falso → continua.  
+3. Preenchimento dos números com zeros.
+4. Divisão dos números em duas partes (`a` e `b`, `c` e `d`).  
+5. Cálculo dos produtos (chamadas recursivas): `z0`, `z2`, `z1`.  
+6. Combinação dos resultados utilizando a fórmula do Karatsuba (`return`).
+
 Abaixo, segue o diagrama do grafo de fluxo do algoritmo
 implementado:
 
 ![Grafo de Fluxo](/assets/grafo_fluxo.png)
+
+A partir da imagem acima, podemos identificar que existem:
+- N = 7 nós (representando as etapas do algoritmo).
+- E = 6 arestas (representando as transições entre as etapas).
+- P = 1 componente conexo (trata-se de um único grafo).
+
+Com isso, podemos calcular a complexidade ciclomática:
+
+```
+M = E - N + 2P
+M = 6 - 7 + 2(1)
+M = 1
+```
+
+### Análise de Complexidade Assintótica
+
