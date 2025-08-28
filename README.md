@@ -24,13 +24,52 @@ Este artigo foi escolhido por sua clareza e pela sua didática.
 
 ### Explicação do código
 
-No código, o algoritmo está implementado na função `def karatsuba(a: int, b: int)`,
+No código, o algoritmo está implementado na função `def karatsuba(num1: int, num2: int)`,
 Essa função recebe os dois números a serem multiplicados e retorna
 o resultado da multiplicação utilizando o algoritmo de Karatsuba.
 
 Como trata-se de um código pequeno, foi escolhido deixar todo o
 conteúdo somente no arquivo `main.py`. Dessa forma, fica mais fácil
 de entender e manter o código.
+
+Abaixo, explico cada passo do código:
+
+`Linha 10`: Caso base
+
+Trata-se do caso base do algoritmo. Como trata-se de um algoritmo
+recursivo, é necessário existir um caso base para finalizar a
+recursão.
+
+No caso, se um dos números tem 1 dígito, faz a multiplicação
+utilizando o método comum.
+
+`Linha 5`: Passo 1
+
+Os números são convertidos para strings para facilitar a sua manipulação.
+Como strings, fica mais fácil de pegar pedaços dos números e
+contar a quantidade de dígitos.
+
+`Linha 15`: Passo 2
+
+As strings, que representam os números, são preenchidas com zeros
+à esquerda, para que ambas tenham o mesmo tamanho. Isso facilita
+a divisão dos números no Python.
+
+`Linha 21`: Passo 3
+
+Os números são divididos em duas partes, cada uma com metade dos dígitos.
+
+`Linha 30`: Passo 4
+
+Os produtos necessários são calculados recursivamente, utilizando as
+partes dos números que foram obtidas no passo anterior.
+
+Os produtos necessários vêm da fórmula combinada do algoritmo de Karatsuba.
+
+`Linha 36`: Combinar os resultados utilizando a fórmula do Karatsuba
+
+Os resultados dos produtos, da etapa anterior, são combinados
+utilizando a fórmula do Karatsuba para obter o resultado final.
 
 
 
