@@ -18,7 +18,14 @@ Dentre os conteúdos utilizados para compreender o algoritmo, foi
 utilizada a explicação deste [artigo do Medium](https://medium.com/@sachinkg12/karatsuba-multiplication-algorithm-f60c4abe5779).
 Este artigo foi escolhido por sua clareza e pela sua didática.
 
-[TODO: INSERIR EXPLICAÇÃO DETALHADA DO ALGORITMO]
+O algoritmo de Karatsuba é baseado na ideia de dividir os números
+em partes menores, realizar multiplicações parciais e depois
+combinar os resultados para obter o produto final. Trata-se de um
+algoritmo recursivo, que reduz a complexidade da multiplicação.
+
+Quando falamos de números grandes, o algoritmo pode reduzir o tempo
+de execução em comparação com o método tradicional. Para números
+pequenos, a diferença de desempenho pode não ser tão significativa.
 
 [TODO: INSERIR DIAGRAMA DRAW.IO]
 
